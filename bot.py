@@ -1,6 +1,7 @@
 import asyncio
 from json import loads
 import random
+import os
 import openpyxl
 from datetime import datetime
 import discord
@@ -101,4 +102,7 @@ async def on_message(message):
     if message.content.startswith("~clear"):
         await message.channel.purge(limit=1000)
 
-client.run("NjczNzg3OTAwNjk3MjQ3NzU0.Xjg3GA.y9jdFEHciSK8t1U-YScP14suB34")
+# client.run("NjczNzg3OTAwNjk3MjQ3NzU0.Xjg3GA.y9jdFEHciSK8t1U-YScP14suB34")
+
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
