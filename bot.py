@@ -22,37 +22,37 @@ async def on_ready():
 @client.event
 async def on_message(message):
     sender = message.author.name
-    nick = message.member.nick
+    nick = str(message.author.nick)
 
     if int(message.channel.id) == int('674075488100024339') and message.content.startswith("!출석"):
         await message.channel.send("👮경찰" + nick + "님이 출석 하셨습니다.　　" + now_time)
     if int(message.channel.id) == int('674075488100024339') and message.content.startswith("!퇴근"):
-        await message.channel.send("👮경찰" + sender + "님이 퇴근 하셨습니다.　　" + now_time)
+        await message.channel.send("👮경찰" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
-    if int(message.channel.id) == int('673911536628269074') and message.content.startswith("!출석"):
-        await message.channel.send("EMS" + sender + "님이 출석 하셨습니다.　　" + now_time)
-    if int(message.channel.id) == int('673911536628269074') and message.content.startswith("!퇴근"):
-        await message.channel.send("EMS" + sender + "님이 퇴근 하셨습니다.　　" + now_time)
+    if int(message.channel.id) == int('674083234115485696') and message.content.startswith("!출석"):
+        await message.channel.send("EMS" +  nick + "님이 출석 하셨습니다.　　" + now_time)
+    if int(message.channel.id) == int('674083234115485696') and message.content.startswith("!퇴근"):
+        await message.channel.send("EMS" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
-    if int(message.channel.id) == int('673911877046108170') and message.content.startswith("!출석"):
-        await message.channel.send("마피아" + sender + "님이 출석 하셨습니다.　　" + now_time)
-    if int(message.channel.id) == int('673911877046108170') and message.content.startswith("!퇴근"):
-        await message.channel.send("마피아" + sender + "님이 퇴근 하셨습니다.　　" + now_time)
+    if int(message.channel.id) == int('674084356779933720') and message.content.startswith("!출석"):
+        await message.channel.send("마피아" + nick + "님이 출석 하셨습니다.　　" + now_time)
+    if int(message.channel.id) == int('674084356779933720') and message.content.startswith("!퇴근"):
+        await message.channel.send("마피아" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
-    if int(message.channel.id) == int('673912076682395669') and message.content.startswith("!출석"):
-        await message.channel.send("칠곡파" + sender + "님이 출석 하셨습니다.　　" + now_time)
-    if int(message.channel.id) == int('673912076682395669') and message.content.startswith("!퇴근"):
-        await message.channel.send("칠곡파" + sender + "님이 퇴근 하셨습니다.　　" + now_time)
+    if int(message.channel.id) == int('674085239307632671') and message.content.startswith("!출석"):
+        await message.channel.send("칠곡파" + nick + "님이 출석 하셨습니다.　　" + now_time)
+    if int(message.channel.id) == int('674085239307632671') and message.content.startswith("!퇴근"):
+        await message.channel.send("칠곡파" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
     if int(message.channel.id) == int('674060336369893396') and message.content.startswith("!출석"):
-        await message.channel.send("모터스" + sender + "님이 출석 하셨습니다.　　" + now_time)
+        await message.channel.send("모터스" + nick + "님이 출석 하셨습니다.　　" + now_time)
     if int(message.channel.id) == int('674060336369893396') and message.content.startswith("!퇴근"):
-        await message.channel.send("모터스" + sender + "님이 퇴근 하셨습니다.　　" + now_time)
+        await message.channel.send("모터스" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
-    if int(message.channel.id) == int('673912196635557911') and message.content.startswith("!출석"):
-        await message.channel.send("군인" + sender + "님이 출석 하셨습니다.　　" + now_time)
-    if int(message.channel.id) == int('673912196635557911') and message.content.startswith("!퇴근"):
-        await message.channel.send("군인" + sender + "님이 퇴근 하셨습니다.　　" + now_time)
+    if int(message.channel.id) == int('674087295581945867') and message.content.startswith("!출석"):
+        await message.channel.send("군인" + nick + "님이 출석 하셨습니다.　　" + now_time)
+    if int(message.channel.id) == int('674087295581945867') and message.content.startswith("!퇴근"):
+        await message.channel.send("군인" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
     if "씨발" in message.content or "개새끼" in message.content or "샹년" in message.content \
             or "좆" in message.content or "Tlqkf" in message.content or "병신" in message.content or "느금마" in message.content \
@@ -104,7 +104,7 @@ async def on_message(message):
     if message.content.startswith("~clear"):
         await message.channel.purge(limit=1000)
 
-# client.run("NjczNzg3OTAwNjk3MjQ3NzU0.Xjg3GA.y9jdFEHciSK8t1U-YScP14suB34")
+client.run("NjczOTI1NjcwNjA2MzQwMTE5.XjjdRw.F3RYHU3leh9mBgZO8kSV2wHW8gI")
 
-access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)
+# access_token = os.environ["BOT_TOKEN"]
+# client.run(access_token)
