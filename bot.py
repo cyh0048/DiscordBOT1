@@ -104,7 +104,7 @@ async def on_message(message):
     if message.content.startswith("~clear"):
         await message.channel.purge(limit=1000)
 
-client.run("NjczOTI1NjcwNjA2MzQwMTE5.XjjdRw.F3RYHU3leh9mBgZO8kSV2wHW8gI")
+# client.run("NjczOTI1NjcwNjA2MzQwMTE5.XjjdRw.F3RYHU3leh9mBgZO8kSV2wHW8gI")
 
-# access_token = os.environ["BOT_TOKEN"]
-# client.run(access_token)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
