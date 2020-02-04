@@ -25,32 +25,32 @@ async def on_message(message):
     nick = str(message.author.nick)
 
     if int(message.channel.id) == int('674075488100024339') and message.content.startswith("!출근"):
-        await message.channel.send("👮경찰" + nick + "님이 출석 하셨습니다.　　" + now_time)
+        await message.channel.send("👮경찰" + nick + "님이 출근 하셨습니다.　　" + now_time)
     if int(message.channel.id) == int('674075488100024339') and message.content.startswith("!퇴근"):
         await message.channel.send("👮경찰" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
     if int(message.channel.id) == int('674083234115485696') and message.content.startswith("!출근"):
-        await message.channel.send("EMS" +  nick + "님이 출석 하셨습니다.　　" + now_time)
+        await message.channel.send("EMS" +  nick + "님이 출근 하셨습니다.　　" + now_time)
     if int(message.channel.id) == int('674083234115485696') and message.content.startswith("!퇴근"):
         await message.channel.send("EMS" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
     if int(message.channel.id) == int('674084356779933720') and message.content.startswith("!출근"):
-        await message.channel.send("마피아" + nick + "님이 출석 하셨습니다.　　" + now_time)
+        await message.channel.send("마피아" + nick + "님이 출근 하셨습니다.　　" + now_time)
     if int(message.channel.id) == int('674084356779933720') and message.content.startswith("!퇴근"):
         await message.channel.send("마피아" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
     if int(message.channel.id) == int('674085239307632671') and message.content.startswith("!출근"):
-        await message.channel.send("칠곡파" + nick + "님이 출석 하셨습니다.　　" + now_time)
+        await message.channel.send("칠곡파" + nick + "님이 출근 하셨습니다.　　" + now_time)
     if int(message.channel.id) == int('674085239307632671') and message.content.startswith("!퇴근"):
         await message.channel.send("칠곡파" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
     if int(message.channel.id) == int('674060336369893396') and message.content.startswith("!출근"):
-        await message.channel.send("모터스" + nick + "님이 출석 하셨습니다.　　" + now_time)
+        await message.channel.send("모터스" + nick + "님이 출근 하셨습니다.　　" + now_time)
     if int(message.channel.id) == int('674060336369893396') and message.content.startswith("!퇴근"):
         await message.channel.send("모터스" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
     if int(message.channel.id) == int('674087295581945867') and message.content.startswith("!출근"):
-        await message.channel.send("군인" + nick + "님이 출석 하셨습니다.　　" + now_time)
+        await message.channel.send("군인" + nick + "님이 출근 하셨습니다.　　" + now_time)
     if int(message.channel.id) == int('674087295581945867') and message.content.startswith("!퇴근"):
         await message.channel.send("군인" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
