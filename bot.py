@@ -22,9 +22,9 @@ async def on_ready():
 @client.event
 async def on_message(message):
     sender = message.author.name
-    if int(message.channel.id) == int('673882234662551592') and message.content.startswith("!출석"):
+    if int(message.channel.id) == int('674075488100024339') and message.content.startswith("!출석"):
         await message.channel.send("👮경찰" + sender + "님이 출석 하셨습니다.　　" + now_time)
-    if int(message.channel.id) == int('673882234662551592') and message.content.startswith("!퇴근"):
+    if int(message.channel.id) == int('674075488100024339') and message.content.startswith("!퇴근"):
         await message.channel.send("👮경찰" + sender + "님이 퇴근 하셨습니다.　　" + now_time)
 
     if int(message.channel.id) == int('673911536628269074') and message.content.startswith("!출석"):
@@ -42,9 +42,9 @@ async def on_message(message):
     if int(message.channel.id) == int('673912076682395669') and message.content.startswith("!퇴근"):
         await message.channel.send("칠곡파" + sender + "님이 퇴근 하셨습니다.　　" + now_time)
 
-    if int(message.channel.id) == int('673912113743527946') and message.content.startswith("!출석"):
+    if int(message.channel.id) == int('674075488100024339') and message.content.startswith("!출석"):
         await message.channel.send("모터스" + sender + "님이 출석 하셨습니다.　　" + now_time)
-    if int(message.channel.id) == int('673912113743527946') and message.content.startswith("!퇴근"):
+    if int(message.channel.id) == int('674075488100024339') and message.content.startswith("!퇴근"):
         await message.channel.send("모터스" + sender + "님이 퇴근 하셨습니다.　　" + now_time)
 
     if int(message.channel.id) == int('673912196635557911') and message.content.startswith("!출석"):
