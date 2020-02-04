@@ -54,6 +54,11 @@ async def on_message(message):
     if int(message.channel.id) == int('674087295581945867') and message.content.startswith("!퇴근"):
         await message.channel.send("군인" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
 
+    if int(message.channel.id) == int('674163348010565642') and message.content.startswith("!출근"):
+        await message.channel.send("뉴비　" + nick + "님이 출근 하셨습니다.　　" + now_time)
+    if int(message.channel.id) == int('674163348010565642') and message.content.startswith("!퇴근"):
+        await message.channel.send("뉴비　" + nick + "님이 퇴근 하셨습니다.　　" + now_time)
+
     if "씨발" in message.content or "개새끼" in message.content or "샹년" in message.content \
             or "좆" in message.content or "Tlqkf" in message.content or "병신" in message.content or "느금마" in message.content \
             or "애미" in message.content or "빡대가리" in message.content or "새끼" in message.content or "존나" in message.content:
