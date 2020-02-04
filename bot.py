@@ -22,8 +22,10 @@ async def on_ready():
 @client.event
 async def on_message(message):
     sender = message.author.name
+    nick = message.member.nick
+
     if int(message.channel.id) == int('674075488100024339') and message.content.startswith("!출석"):
-        await message.channel.send("👮경찰" + sender + "님이 출석 하셨습니다.　　" + now_time)
+        await message.channel.send("👮경찰" + nick + "님이 출석 하셨습니다.　　" + now_time)
     if int(message.channel.id) == int('674075488100024339') and message.content.startswith("!퇴근"):
         await message.channel.send("👮경찰" + sender + "님이 퇴근 하셨습니다.　　" + now_time)
 
